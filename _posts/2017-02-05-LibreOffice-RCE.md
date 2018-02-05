@@ -30,7 +30,7 @@ Each method can be used with macro security set to **Very High**.
 Create a document with macro in it. 
 You can use MSF’s */exploit/multi/misc/openoffice_document_macro* or you can create it by yourself using *Shell* function of Basic language.
 
-[Custom macro](https://raw.githubusercontent.com/byurinov/byurinov.github.io/master/images/custom_macro.png)
+![Custom macro](https://raw.githubusercontent.com/byurinov/byurinov.github.io/master/images/custom_macro.png)
  
 Assign your macro to document opening function via *Tools -> Customize -> Open Document*.
 ![Open with macro](https://raw.githubusercontent.com/byurinov/byurinov.github.io/master/images/open_with_macro.png)
