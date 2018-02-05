@@ -20,6 +20,7 @@ if you don't need graphical output.
 If it is already started you can check it with NMap:
 
 > PORT     STATE SERVICE VERSION
+
 > 2002/tcp open  urp     UNO Remote Protocol (LibreOffice)
 
 
