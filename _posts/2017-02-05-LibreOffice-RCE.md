@@ -4,7 +4,7 @@ title: LibreOffice listening mode RCE
 ---
 
 
-# Executing commands via LibreOffice listening mode
+Executing commands via LibreOffice listening mode
 
 LibreOffice (as well as OpenOffice and other relatives) allows users to control the program remotely via [listening mode](https://wiki.openoffice.org/wiki/Documentation/DevGuide/ProUNO/Starting_OpenOffice.org_in_Listening_Mode). You can use this mode on any supported platform (Windows, Linux, Mac OS X).
 Everything you need us start your office program with the following command:
