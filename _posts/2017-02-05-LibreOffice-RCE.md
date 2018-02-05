@@ -89,7 +89,7 @@ document.dispose()
 
 ## SystemShellExecute method
 
-The best way to execute your command is to use *execute* method of *XSystemShellExecute* interface of API. You don't even need to create a document to use it.
+The best way to execute your command is to use *execute* method of *XSystemShellExecute* API interface. You don't even need to create a document to use it.
 
 ```python
 #!/usr/bin/env python3
