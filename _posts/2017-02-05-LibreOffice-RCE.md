@@ -13,13 +13,13 @@ Everything you need us start your office program with the following command:
 Office’s listening mode uses [Universal Network Objects (UNO)](https://www.openoffice.org/udk/common/man/uno.html) component model.
 You can write your own scripts to use it with python3-uno package.
 There are several ways to execute command on remote system using UNO in LibreOffice:
-1. Open a document with macro in it with *MacroExecMode* set to [ALWAYS_EXECUTE_NO_WARN](https://www.openoffice.org/api/docs/common/ref/com/sun/star/document/MacroExecMode.html#ALWAYS_EXECUTE_NO_WARN)
+1. Open a document with macro in it with *MacroExecMode* set to [ALWAYS\_EXECUTE\_NO\_WARN](https://www.openoffice.org/api/docs/common/ref/com/sun/star/document/MacroExecMode.html#ALWAYS_EXECUTE_NO_WARN)
 2. Open a document with macro and then call it with [getScript](https://www.openoffice.org/api/docs/common/ref/com/sun/star/script/provider/XScriptProvider.html#getScript) method
 3. [SystemShellExecute](https://www.openoffice.org/api/docs/common/ref/com/sun/star/system/XSystemShellExecute.html#execute) method
 
 Each method can be used with macro security set to **Very High**.
 
-## ALWAYS_EXECUTE_NO_WARN method
+## ALWAYS\_EXECUTE\_NO\_WARN method
 Create a document with macro in it. You can use MSF’s */exploit/multi/misc/openoffice_document_macro* or you can create it by yourself with *Shell* function of Basic language.
  
 Assign your macro to document opening function via *Tools -> Customize -> Open Document*.
