@@ -7,9 +7,21 @@ LibreOffice (as well as OpenOffice and other relatives) allows users to control 
 
 This mode can be used on any supported platform (Windows, Linux, Mac OS X).
 
-Everything you need is start your office program with the following command:
+Everything you need is to start your office program with the following command:
 
-`soffice -accept=socket,host=0,port=2002;urp;`
+`soffice -accept="socket,host=0,port=2002;urp;"`
+
+or
+
+`soffice -accept="socket,host=0,port=2002;urp;" -headless -nologo -nodefault -nofirststartwizard`
+
+if you don't need graphical output.
+
+If it is already started you can check it with NMap:
+
+> PORT     STATE SERVICE VERSION
+> 2002/tcp open  urp     UNO Remote Protocol (LibreOffice)
+
 
 Office’s listening mode uses [Universal Network Objects (UNO)](https://www.openoffice.org/udk/common/man/uno.html) component model.
 You can write your own scripts to interact with UNO API with python3-uno package.
