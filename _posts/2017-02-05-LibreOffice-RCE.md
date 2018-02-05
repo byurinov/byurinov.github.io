@@ -22,6 +22,7 @@ I'll show you the following three:
 3. [SystemShellExecute](https://www.openoffice.org/api/docs/common/ref/com/sun/star/system/XSystemShellExecute.html#execute) method
 
 Each method can be used with macro security set to **Very High**.
+
 ![Very High](https://raw.githubusercontent.com/byurinov/byurinov.github.io/master/images/macro_high.png)
 
 
@@ -33,6 +34,7 @@ You can use MSF’s */exploit/multi/misc/openoffice_document_macro* or you can c
 ![Custom macro](https://raw.githubusercontent.com/byurinov/byurinov.github.io/master/images/custom_macro.png)
  
 Assign your macro to document opening function via *Tools -> Customize -> Open Document*.
+
 ![Open with macro](https://raw.githubusercontent.com/byurinov/byurinov.github.io/master/images/open_with_macro.png)
 
 
