@@ -15,9 +15,9 @@ or
 
 `soffice -accept="socket,host=0,port=2002;urp;" -headless -nologo -nodefault -nofirststartwizard`
 
-if you don't need graphical output.
+-- if you don't need graphical output.
 
-If it is already started you can check it with NMap:
+Check if it is already started with NMap:
 
 > PORT     STATE SERVICE VERSION
 >
