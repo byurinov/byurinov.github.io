@@ -22,7 +22,7 @@ Create a document with macro in it. You can use MSF’s */exploit/multi/misc/ope
  
 Assign your macro to document opening function via *Tools -> Customize -> Open Document*.
 
-You don't need to upload your document with macro to host running LibreOffice, you can call it by URL instead.
+You can open not just local files, but remote files as well.
 
 ```python
 #!/usr/bin/env python3
