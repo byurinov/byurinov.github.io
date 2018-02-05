@@ -3,11 +3,9 @@ layout: post
 title: LibreOffice listening mode RCE
 ---
 
-
-Executing commands via LibreOffice listening mode
-
 LibreOffice (as well as OpenOffice and other relatives) allows users to control the program remotely via [listening mode](https://wiki.openoffice.org/wiki/Documentation/DevGuide/ProUNO/Starting_OpenOffice.org_in_Listening_Mode). You can use this mode on any supported platform (Windows, Linux, Mac OS X).
 Everything you need us start your office program with the following command:
+
 `soffice -accept=socket,host=0,port=2002;urp;`
 
 Office’s listening mode uses [Universal Network Objects (UNO)](https://www.openoffice.org/udk/common/man/uno.html) component model.
@@ -24,7 +22,7 @@ Create a document with macro in it. You can use MSF’s */exploit/multi/misc/ope
  
 Assign your macro to document opening function via *Tools -> Customize -> Open Document*.
 
-You don't need to upload your document with macro to host running LibreOffice, you can call it by URL instead.
+You can open not just local files, but remote files as well.
 
 ```python
 #!/usr/bin/env python3
